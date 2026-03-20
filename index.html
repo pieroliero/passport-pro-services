@@ -890,6 +890,16 @@
   }, { threshold: 0.12 });
 
   document.querySelectorAll('.perk').forEach(el => io.observe(el));
+  // AUTO-RESIZE FOR SQUARESPACE IFRAME
+  function sendHeight() {
+    window.parent.postMessage({ iframeHeight: document.body.scrollHeight }, '*');
+  }
+  if (window.ResizeObserver) {
+    const ro = new ResizeObserver(() => sendHeight());
+    ro.observe(document.body);
+  } else {
+    window.addEventListener('load', sendHeight);
+  }
 </script>
 
 </body>
