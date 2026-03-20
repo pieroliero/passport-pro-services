@@ -600,8 +600,9 @@
   }
 
   .btn-ghost {
-    background: transparent;
-    color: var(--muted);
+    background: linear-gradient(135deg, #a855f7, #ec4899);
+    color: #fff;
+    box-shadow: 0 4px 20px rgba(168,85,247,0.25);
     font-family: var(--font-btn);
     font-size: 13px;
     font-weight: 700;
@@ -609,7 +610,7 @@
     text-transform: uppercase;
     padding: 15px 28px;
     border-radius: 300px;
-    border: 1.5px solid rgba(255,255,255,0.12);
+    border: none;
     cursor: pointer;
     text-decoration: none;
     display: inline-block;
@@ -617,8 +618,8 @@
   }
 
   .btn-ghost:hover {
-    border-color: rgba(255,255,255,0.28);
-    color: var(--text);
+    box-shadow: 0 6px 28px rgba(168,85,247,0.40);
+    transform: translateY(-2px);
   }
 
   /* ── FOOTER ── */
