@@ -30,8 +30,7 @@
     background: var(--dark);
     color: var(--text);
     font-family: var(--font-body);
-    min-height: 100vh;
-    overflow-x: hidden;
+      overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
   }
 
@@ -660,7 +659,7 @@
   <!-- HEADER -->
   <header class="header">
     <div class="logo-wrap">
-      <img src="BRANDING/LOGO & BANNERS/Website_Logo.png" alt="Passport Pro">
+      <img src="logo.png" alt="Passport Pro">
     </div>
     <p class="eyebrow">Passport Pro™ — Work With Me</p>
     <h1 class="headline">Stop Guessing.<br><em>Start Living.</em></h1>
@@ -890,16 +889,7 @@
   }, { threshold: 0.12 });
 
   document.querySelectorAll('.perk').forEach(el => io.observe(el));
-  // AUTO-RESIZE FOR SQUARESPACE IFRAME
-  function sendHeight() {
-    window.parent.postMessage({ iframeHeight: document.body.scrollHeight }, '*');
-  }
-  if (window.ResizeObserver) {
-    const ro = new ResizeObserver(() => sendHeight());
-    ro.observe(document.body);
-  } else {
-    window.addEventListener('load', sendHeight);
-  }
+
 </script>
 
 </body>
