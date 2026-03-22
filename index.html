@@ -30,7 +30,8 @@
     background: var(--dark);
     color: var(--text);
     font-family: var(--font-body);
-      overflow-x: hidden;
+    min-height: 100vh;
+    overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
   }
 
@@ -602,7 +603,6 @@
   .btn-ghost {
     background: linear-gradient(135deg, #a855f7, #ec4899);
     color: #fff;
-    box-shadow: 0 4px 20px rgba(168,85,247,0.25);
     font-family: var(--font-btn);
     font-size: 13px;
     font-weight: 700;
@@ -615,6 +615,7 @@
     text-decoration: none;
     display: inline-block;
     transition: all 0.2s;
+    box-shadow: 0 4px 20px rgba(168,85,247,0.25);
   }
 
   .btn-ghost:hover {
@@ -660,7 +661,7 @@
   <!-- HEADER -->
   <header class="header">
     <div class="logo-wrap">
-      <img src="logo.png" alt="Passport Pro">
+      <img src="BRANDING/LOGO & BANNERS/Website_Logo.png" alt="Passport Pro">
     </div>
     <p class="eyebrow">Passport Pro™ — Work With Me</p>
     <h1 class="headline">Stop Guessing.<br><em>Start Living.</em></h1>
@@ -721,7 +722,7 @@
           </div>
         </div>
 
-        <a href="#book" class="btn-cta">Book Trip Planning</a>
+        <a href="https://calendly.com/pierre-passportpro/passport-pro-trip-planning" class="btn-cta" target="_blank">Book Trip Planning</a>
       </div>
     </div>
 
@@ -769,7 +770,7 @@
           </div>
         </div>
 
-        <a href="#book" class="btn-cta">Start Private Coaching</a>
+        <a href="https://calendly.com/pierre-passportpro/private-coaching" class="btn-cta" target="_blank">Start Private Coaching</a>
       </div>
     </div>
 
@@ -853,8 +854,8 @@
     <h2>Ready to Make Your Move?</h2>
     <p>Pick your package and let's get to work. The guys who win aren't smarter — they just had better intel.</p>
     <div class="btn-row">
-      <a href="#" class="btn-gold">Trip Planning — $129.99</a>
-      <a href="#" class="btn-ghost">Coaching — $99.99 / Call</a>
+      <a href="https://calendly.com/pierre-passportpro/passport-pro-trip-planning" class="btn-gold" target="_blank">Trip Planning — $129.99</a>
+      <a href="https://calendly.com/pierre-passportpro/private-coaching" class="btn-ghost" target="_blank">Coaching — $99.99 / Call</a>
     </div>
   </div>
 
@@ -890,7 +891,6 @@
   }, { threshold: 0.12 });
 
   document.querySelectorAll('.perk').forEach(el => io.observe(el));
-
 </script>
 
 </body>
